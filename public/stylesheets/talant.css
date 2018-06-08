@@ -1,0 +1,317 @@
+.talant .slider {
+  margin-top: 60px;
+  background-color: #F5F5F5; }
+  .talant .slider .talantCarousel {
+    max-width: 1200px;
+    position: relative;
+    padding: 0;
+    z-index: 5; }
+    .talant .slider .talantCarousel .slid-img img {
+      display: block;
+      width: 100%;
+      height: 440px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: left;
+         object-position: left; }
+    .talant .slider .talantCarousel .slid-attr {
+      background: rgba(255, 210, 0, 0.9);
+      width: 296px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 10;
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 25px 30px; }
+    .talant .slider .talantCarousel .slid-title {
+      text-transform: uppercase;
+      font-size: 30px;
+      color: #2A2E34;
+      margin-bottom: 10px;
+      font-weight: bold;
+      margin-top: 45px; }
+    .talant .slider .talantCarousel .slid-des {
+      font-size: 16px;
+      text-align: justify;
+      color: #2A2E34; }
+    .talant .slider .talantCarousel .owl-nav {
+      position: absolute;
+      right: 122px;
+      bottom: 40px; }
+    .talant .slider .talantCarousel .owl-next {
+      margin-left: 16px; }
+    .talant .slider .talantCarousel .owl-next, .talant .slider .talantCarousel .owl-prev {
+      background-color: #fff !important;
+      width: 48px;
+      height: 48px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .talant .slider .talantCarousel .owl-next span, .talant .slider .talantCarousel .owl-prev span {
+        font-size: 80px;
+        display: block;
+        height: 48px;
+        line-height: 24px; }
+      .talant .slider .talantCarousel .owl-next:hover, .talant .slider .talantCarousel .owl-prev:hover {
+        background-color: #2A2E34 !important; }
+      .talant .slider .talantCarousel .owl-next:hover span, .talant .slider .talantCarousel .owl-prev:hover span {
+        color: #fff; }
+      .talant .slider .talantCarousel .owl-next.disabled, .talant .slider .talantCarousel .owl-prev.disabled {
+        background-color: #fff !important; }
+      .talant .slider .talantCarousel .owl-next.disabled span, .talant .slider .talantCarousel .owl-prev.disabled span {
+        color: #C4C4C4 !important; }
+
+.talant .filter {
+  background-color: #F5F5F5; }
+  .talant .filter .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .talant .filter-btn label {
+    width: 102px;
+    height: 48px;
+    padding: 0 5px;
+    margin-top: 12px;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px 8px 0 0;
+            border-radius: 8px 8px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .talant .filter-btn label span {
+      text-transform: uppercase;
+      font-weight: bold; }
+  .talant .filter-seting span {
+    font-weight: 600;
+    font-size: 14px; }
+  .talant .filter-seting label {
+    color: #2A2E34;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 18px;
+    cursor: pointer; }
+    .talant .filter-seting label svg {
+      -webkit-transform: translateY(3px);
+          -ms-transform: translateY(3px);
+              transform: translateY(3px); }
+    .talant .filter-seting label span {
+      font-size: 16px;
+      display: inline-block;
+      margin-left: 5px; }
+  .talant .filter-seting input + label {
+    color: #2A2E34; }
+    .talant .filter-seting input + label circle {
+      fill: #2A2E34; }
+  .talant .filter-seting input:checked + label {
+    color: #A1A1A1; }
+    .talant .filter-seting input:checked + label circle {
+      fill: #A1A1A1; }
+
+.talant .person {
+  padding: 48px 0; }
+  .talant .person .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .talant .person-block {
+    width: 220px;
+    height: 318px;
+    overflow: hidden;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    margin: 10px 7px;
+    text-decoration: none;
+    -webkit-transition: background-color, -webkit-box-shadow .5s;
+    transition: background-color, -webkit-box-shadow .5s;
+    -o-transition: background-color, box-shadow .5s;
+    transition: background-color, box-shadow .5s;
+    transition: background-color, box-shadow .5s, -webkit-box-shadow .5s; }
+    .talant .person-block:hover {
+      background-color: #FFF6C9;
+      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+    .talant .person-block-data {
+      padding: 8px; }
+      .talant .person-block-data-photo {
+        width: 204px;
+        height: 204px; }
+        .talant .person-block-data-photo img {
+          -o-object-fit: contain;
+             object-fit: contain; }
+      .talant .person-block-data-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden; }
+      .talant .person-block-data-city {
+        font-size: 12px;
+        color: #333; }
+      .talant .person-block-data-job {
+        font-size: 16px;
+        color: #A1A1A1;
+        margin-top: 8px; }
+    .talant .person-block-info {
+      background: rgba(0, 0, 0, 0.03);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .talant .person-block-info-view {
+        margin-left: auto;
+        color: #A1A1A1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .talant .person-block-info-view span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+      .talant .person-block-info-like {
+        margin-left: 10px;
+        margin-right: 8px;
+        color: #D81F20;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .talant .person-block-info-like span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+
+.talant .pagination {
+  margin-bottom: 48px; }
+  .talant .pagination-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .talant .pagination-block .dprev {
+      -webkit-border-radius: 4px 0 0 4px;
+              border-radius: 4px 0 0 4px; }
+    .talant .pagination-block .dnext {
+      -webkit-border-radius: 0 4px 4px 0;
+              border-radius: 0 4px 4px 0; }
+    .talant .pagination-block > div {
+      border: 1px solid #C4C4C4;
+      width: 48px;
+      height: 48px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .talant .pagination-block > div:hover, .talant .pagination-block > div.active {
+        border-color: #2A2E34;
+        background-color: #2A2E34;
+        color: #fff; }
+    .talant .pagination-block .check {
+      background: #FFFFFF;
+      border: 2px solid #FFD200;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      width: 84px;
+      height: 48px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      margin-left: 15px; }
+
+footer.head {
+  position: inherit; }
+
+.person-block-pro {
+  display: none; }
+
+.active {
+  position: relative; }
+  .active .person-block-pro {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; }

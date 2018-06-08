@@ -1,0 +1,126 @@
+$headColor: #2A2E34
+$headLink: #fff
+$hoveLinkColor: #FFD200
+#signup:checked ~ .popup-signup
+  display: flex
+#signup:checked ~ .section1-info-buttons .popup-signup
+  display: flex
+#signup:checked ~ .section1-info-buttons
+  z-index: 110
+#signin:checked ~ .popup-signin
+  display: flex
+#filter:checked ~ .filter-option
+  display: flex!important
+
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: rgba(40, 47, 60, 0.8)
+  display: none
+  align-items: center
+  justify-content: center
+  z-index: 1
+  height: 100vh
+  overflow: hidden
+  .signin-link
+    color: #D81F20
+    margin-bottom: 25px
+    text-decoration: underline
+    label
+      padding: 0 13px
+      border-right: 1px solid #C4C4C4
+    span
+      padding: 0 13px
+  &-signin .btn
+    background-color: #D81F20!important
+  &-wrap
+    min-width: 400px
+    padding: 15px
+    background: #fff
+    display: flex
+    flex-direction: column
+    position: relative
+    z-index: 1
+    box-shadow: 0px 16px 30px rgba(75, 63, 26, 0.4)
+    border-radius: 4px
+    position: relative
+    &>label
+      position: absolute
+      right: 10px
+      top: 10px
+      z-index: 12
+    .signup
+      margin: 0px
+      width: 100%
+      height: inherit
+      background: transparent
+      box-shadow: none
+      border: none
+      p
+        margin: 15px auto
+      & > p, & form > div, & form > p
+        text-align: center
+      .checkRools
+        display: inline-flex
+        justify-content: flex-start
+        align-items: center
+        width: 100%
+        p
+          margin: 0 0 0 10px
+          text-align: left
+          line-height: 15px
+        .viewinput
+          display: block
+          width: 16px
+          min-width: 16px
+          height: 16px
+          background: #FFFFFF
+          border: 2px solid $hoveLinkColor
+          box-sizing: border-box
+          border-radius: 4px
+          span
+            display: block
+            margin: 3px
+            width: 6px
+            height: 6px
+            background: #fff
+            border-radius: 1px
+        input:checked ~ .viewinput
+          span
+            background: $headColor
+        .rools
+          color: #D81F20
+          line-height: 17px
+          text-decoration: underline
+      &-title
+        text-transform: uppercase
+        color: $headColor
+        line-height: 24px
+        font-size: 26px
+        text-align: center
+        font-weight: bold
+        letter-spacing: -0.03em
+      &-form
+        button
+          width: 200px
+          margin-top: 15px
+        input
+          width: 100%
+          height: 48px
+          background: #FFFFFF
+          border: 2px solid $hoveLinkColor
+          box-sizing: border-box
+          border-radius: 4px
+          padding: 12px 14px 14px 14px
+      &-subscribe
+        a
+          margin-left: 8px
+          width: 32px
+          height: 32px
+          svg
+            width: 32px
+            height: 32px
+          &:first-child
+            margin-left: 0

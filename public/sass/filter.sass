@@ -1,0 +1,165 @@
+$headColor: #2A2E34
+$headLink: #fff
+$hoveLinkColor: #FFD200
+.filter
+  .fluid
+    background: #FFFFFF
+    .container
+      width: 1110px
+      padding: 30px
+      margin-bottom: 20px
+      border-radius: 0 0 8px 8px
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+  form
+    display: flex
+    width: 100%
+    user-select: none
+  &-option
+    display: none!important
+    width: 100%
+  &-item
+    display: flex
+    align-items: center
+    margin: 13px 0
+    label
+      margin-left: 5px
+      font-size: 14px
+  &-location
+    width: 30%
+    padding: 0 23px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &-widget
+      display: flex
+      width: 100%
+      justify-content: stretch
+      & .line
+        display: flex
+        align-items: center
+        flex-grow: 1
+        margin: 0 15px
+        position: relative
+        &-active
+          position: absolute
+          height: 6px
+          background-color: $hoveLinkColor
+          left: 0
+          right: 0
+        &-main
+          position: absolute
+          transform: translateY(-3px)
+          top: 50%
+          height: 6px
+          width: 100%
+          display: inline-block
+          background-color: #dedede
+      & #labl1, & #labl2
+        text-align: center
+        position: absolute
+        top: 0
+        *
+          line-height: 10px
+          color: #999
+          font-size: 10px
+      & #labl1
+        transform: translate(-50%, -100%)
+        left: 0
+      & #labl2
+        transform: translate(50%, -100%)
+        right: 0
+    &-value input
+      background: #FFFFFF
+      border: 2px solid #FFD200
+      border-radius: 4px
+      font-size: 16px
+      color: #6e6e6e
+      line-height: 2em
+      width: 266px
+      padding: 0 15px
+    &-sex
+      display: flex
+      align-items: center
+      span
+        display: flex
+        align-items: center
+        margin-right: 10px
+        label
+          margin-right: 5px
+    &-status
+      span
+        display: flex
+        align-items: center
+        margin-right: 5px
+        label
+          display: inline-flex
+          align-items: center
+          b
+            margin: 5px
+    .viewinput
+      display: block
+      width: 16px
+      min-width: 16px
+      height: 16px
+      background: #FFFFFF
+      border: 2px solid $hoveLinkColor
+      box-sizing: border-box
+      border-radius: 4px
+      span
+        display: block
+        margin: 3px
+        width: 6px
+        height: 6px
+        background: #fff
+        border-radius: 1px
+    input:checked ~ .viewinput
+      span
+        background: $headColor
+  &-ads
+    display: flex
+    flex-direction: column
+    width: 70%
+    border-right: 1px solid #C4C4C4
+    &-check
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      height: 200px
+      justify-content: space-between
+      flex-grow: 1
+      margin-top: 10px
+      margin-bottom: 30px
+    &-buttons
+      display: flex
+      align-items: center
+      margin-right: auto
+      .btn
+        background-color: #D81F20
+        margin-right: 30px
+      .clearFilter
+        background: #FFFFFF
+        border: 1px solid #C4C4C4
+        border-radius: 8px
+        padding: 11px 16px 10px 16px
+        color: #C4C4C4
+        font-weight: 600
+        font-size: 14px
+    .viewinput
+      display: block
+      width: 16px
+      min-width: 16px
+      height: 16px
+      background: #FFFFFF
+      border: 2px solid $hoveLinkColor
+      box-sizing: border-box
+      border-radius: 4px
+      span
+        display: block
+        margin: 3px
+        width: 6px
+        height: 6px
+        background: #fff
+        border-radius: 1px
+    input:checked ~ .viewinput
+      span
+        background: $headColor

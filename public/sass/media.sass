@@ -1,0 +1,245 @@
+$headColor: #2A2E34
+$headLink: #fff
+$hoveLinkColor: #FFD200
+@media (min-width: 1200px)
+  .nodesctop
+    display: none
+  .head-line .nosearch
+    display: flex
+  .head-button-menu
+    display: none
+@media (max-width: 1199px)
+  header .head-line .issearchT
+    display: none
+  .container
+    width: 738px
+  header.head
+    padding: 0 15px
+  header.head .container
+    width: 100%
+    padding: 0
+  .talantCarousel.container
+    width: 100%
+  .head-search-input input
+    width: 100%
+  .banner
+    height: 133px
+    iframe
+      transform: scale(0.63) translate(-345px, -65px)
+  .head
+    &-section-auth
+      display: none
+    &-logo
+      margin-right: auto
+    &-search
+      margin-left: 23px
+      .openSearch
+        margin: 0
+        width: 100%
+    &-search.active
+      margin-left: -15px
+      width: 100%
+      display: flex
+      justify-content: flex-end
+    &-donate
+      margin-right: 32px
+    &-section-menu
+      display: none
+  .talant .slider .talantCarousel .slid
+    &-attr
+      width: 260px
+  .talant .person .container
+    justify-content: space-between
+  .nodesctop
+    display: block
+    .head
+      background-color: $headColor
+      &-open
+        position: fixed
+        z-index: 110
+        //left: 0
+        top: 60px
+        //right: 0
+        //height: calc(100vh - 60px)
+        height: 440px
+        width: 320px
+        right: 0
+        left: inherit
+        overflow-y: auto
+        transition: 0.5s
+        & .head-section
+          position: absolute!important
+          bottom: 0
+          width: 100%
+          @media (orientation: landscape)
+            position: relative!important
+      &-close
+        height: 0
+        position: fixed
+        z-index: 110
+        //left: 0
+        top: 60px
+        width: 320px
+        right: 0
+        left: inherit
+        transition: .5s
+        & .head-section
+          position: absolute!important
+          bottom: 0
+          width: 100%
+
+      & .head-section
+        //min-height: 420px
+        //height: calc(100vh - 60px)
+        height: 440px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+        &-auth
+          display: flex
+          padding-top: 20px
+          justify-content: center
+          line-height: 37px
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+          padding-bottom: 16px
+          margin-left: 12px
+          margin-right: 12px
+          & .functions-item-signup
+            padding: 7px 15px
+          a
+            font-size: 16px
+        &-menu
+          padding-top: 12px
+          padding-bottom: 38px
+          display: block
+          margin: auto
+          ul
+            padding: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0
+            li
+              list-style: none
+              a
+                display: inline-block
+                color: $headLink
+                text-decoration: none
+                text-transform: uppercase
+                //font-size: 16px
+                //line-height: 19px
+                //margin-top: 26px
+                font-size: 14px
+                line-height: 16px
+                margin-top: 19px
+                &.active
+                  color: $hoveLinkColor
+                  border: 1px solid $hoveLinkColor
+        &-subscribe
+          //padding: 0px 10px 12px 10px
+          padding: 0px 10px 30px 10px
+          position: relative
+          overflow: hidden
+          p
+            color: #fff
+            text-align: center
+            font-size: 16px
+            line-height: 19px
+            margin: 8px 0px 15px
+          &:before
+            content: ""
+            width: 50%
+            left: 25%
+            height: 2px
+            background-color: rgba(255, 255, 255, 0.2)
+            position: absolute
+            top: 0
+          &-link
+            display: flex
+            justify-content: center
+            a
+              text-decoration: none
+              display: inline-block
+              margin-left: 16px
+              width: 48px
+              height: 48px
+              border-radius: 50%
+              overflow: hidden
+              user-select: none
+              &:first-child
+                margin-left: 0
+      .functions
+        display: flex
+        align-items: center
+        margin-left: auto
+        padding-bottom: 1px
+        &-item
+          margin-left: 25px
+          &:first-child
+            margin-left: 0
+          a
+            color: $headLink
+            text-decoration: none
+            text-transform: uppercase
+          &-signup
+            border: 1px solid
+            padding: 3px 5px
+            border-radius: 5px
+            font-weight: 500
+  .head-button-menu
+    padding: 2px
+    width: 40px
+    height: 28px
+    min-width: 40px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    margin-left: 28px
+    .b1
+      width: 100%
+      transition: .3s
+    .b2
+      width: 75%
+    .b3
+      width: 50%
+      transition: .3s
+    &.active .b1
+      width: 100%
+      transform: rotate(-45deg) translate(-15%, 13px)
+      transition: .3s
+    &.active .b2
+      width: 75%
+      opacity: 0
+    &.active .b3
+      transform: rotate(45deg) translate(-11%, -12px)
+      width: 100%
+      transition: .3s
+    span
+      background-color: #fff
+      display: block
+      height: 3px
+  .footer.head .head
+    &-language
+      display: none
+    &-section
+      &-menu
+        display: block
+        margin-right: 0
+        margin-left: auto
+        li
+          margin-left: 28px
+          margin-right: 0
+          &:first-child
+            margin-left: 0
+        a
+          font-weight: normal
+          font-size: 14px
+          line-height: 16px
+          color: #fff
+          padding: 0
+          letter-spacing: -0.02em
+          text-transform: none
+          &.active
+            color: $hoveLinkColor

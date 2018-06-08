@@ -1,0 +1,98 @@
+.ui-selectmenu-button.ui-button{
+    width: calc(100% - 4px);
+    padding: 2px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: left;
+    background-color: #2a2e34;
+    justify-content: center;
+    border: none;
+    border-radius:0;
+    outline: none;
+}
+.ui-selectmenu-text{
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ui-button .ui-icon {
+    background-image: url(http://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_ffffff_256x240.png);
+    width: 8px;
+    margin-left: 4px;
+}
+.ui-icon-triangle-1-s {
+    background-position: -68px -16px;
+}
+.ui-menu-item-wrapper.ui-state-active,
+.ui-menu-item div{
+    background: #2a2e34;
+    border: none;
+    text-transform: uppercase;
+    padding: 1px 8px 1px 5px;
+    line-height: 19px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.ui-menu-item-wrapper.ui-state-active{
+    color: #FFD200;
+}
+.ui-menu .ui-menu-item-wrapper {
+    position: relative;
+    padding: 0px 1px 0px 4px;
+}
+.ui-widget.ui-widget-content{
+    padding: 15px 5px;
+    border: none;
+    background-color: #2a2e34;
+}
+#languageFooter-menu{
+    position: absolute;
+    top: -118px;
+}
+#language-menu{
+    /*position: fixed;*/
+}
+
+#typeSearch-button.ui-selectmenu-button-closed .ui-icon{
+    transform: rotate(180deg);
+}
+#typeSearch-button .ui-icon{
+    background-image: url(/images/arrowDown.svg);
+    background-position: 0;
+    display: block;
+    background-size: contain;
+    width: 16px;
+}
+#typeSearch-button{
+    padding: 0 15px;
+    display: flex;
+    justify-content:space-between;
+
+}
+.ui-menu-item-wrapper{
+    margin: 0!important;
+}
+#typeSearch-menu .ui-menu-item div:hover{
+    color: #0c0c0c;
+}
+#typeSearch-menu .ui-menu-item div{
+    color: #666;
+    transition: .3s;
+}
+#typeSearch-menu.ui-widget.ui-widget-content, #typeSearch-menu .ui-menu-item-wrapper{
+    background: #F7F7F7;
+    border-radius: 0px 0px 4px 4px;
+
+}
+#typeSearch-menu.ui-widget.ui-widget-content{
+    padding: 15px;
+}
+#typeSearch-menu .ui-menu-item-wrapper{
+    line-height: 26px;
+    text-transform: lowercase;
+}
