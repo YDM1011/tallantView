@@ -4,7 +4,6 @@
 ## cd tallantView 
 ## npm i
 ## npm start
-## 
 ##You can see only 3 links for the appropriate size of the device:
 ##http://localhost/talant (only for desktop and tablet - other page)
 ##http://localhost/ (only for desctop - home-page)
