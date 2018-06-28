@@ -1,9 +1,62 @@
 $headColor: #2A2E34
 $headLink: #fff
 $hoveLinkColor: #FFD200
+.viewOption
+  align-items: center
+  background: #FFFFFF
+  border: 2px solid #FFD200
+  border-radius: 4px
+  padding: 2px 8px 5px 8px
+  circle
+    fill: $headColor
+  span
+    font-size: 16px
+    display: inline-block
+    margin-left: 5px
+  svg
+    transform: translateY(3px)
+.option
+  color: $headColor
+  display: inline-flex
+  align-items: center
+  margin-left: 18px
+  cursor: pointer
+  color: $headColor
+  &.active
+    color: #A1A1A1
+    circle
+      fill: #A1A1A1
+  circle
+    fill: $headColor
+  svg
+    transform: translateY(3px)
+    margin-left: 10px
+  span
+    font-size: 16px
+    display: inline-block
+    margin-left: 5px
+.option
+  display: inline
+  margin: 0
+footer.head
+  position: inherit
+.person-block-pro
+  display: none
+.active
+  position: relative
+  & .person-block-pro
+    display: block
+    position: absolute
+    top: 0
+    right: 0
 .filter
+  &.fluid
+    overflow: inherit
+  &-seting
+    display: flex
   .fluid
     background: #FFFFFF
+    overflow: inherit
     .container
       width: 1110px
       padding: 30px
@@ -163,3 +216,22 @@ $hoveLinkColor: #FFD200
     input:checked ~ .viewinput
       span
         background: $headColor
+@media (max-width: 767px)
+  .select
+    &-open
+      background-color: #fff
+      border: 2px solid $hoveLinkColor
+      border-radius: 0 0 4px 4px
+      position: absolute
+      bottom: 5px
+      transform: translateY(100%)
+      z-index: 1
+      padding: 8px 0
+      display: flex
+      flex-direction: column
+      left: 0
+      right: 0
+      .option
+        height: 2em
+    &-close
+        display: none!important

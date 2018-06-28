@@ -124,3 +124,297 @@ $hoveLinkColor: #FFD200
             height: 32px
           &:first-child
             margin-left: 0
+.popupData
+  padding-top: 60px
+  position: fixed
+  z-index: 120
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(40, 47, 60, 0.8)
+  &-info-share
+    position: absolute
+    bottom: 0
+    right: 50%
+    z-index: 2
+    margin-right: -585px
+    margin-bottom: 20px
+    padding-top: 32px
+    &-tit
+      font-size: 12px
+      text-align: center
+      line-height: 14px
+      text-transform: uppercase
+      color: #fff
+    &-ico
+      display: flex
+      justify-content: center
+      a
+        display: block
+        text-decoration: none!important
+        width: 32px
+        height: 32px
+        margin: 4px
+        svg
+          width: 32px
+          height: 32px
+        circle
+          fill: $headColor
+          transition: fill .5s
+        path
+          fill: #fff
+          transition: fill .5s
+        &:hover
+          & circle
+            fill: #fff
+          & path
+            fill: $headColor
+  &-close
+    display: none
+  &-item
+    height: 440px
+    background-color: #000
+    position: relative
+    & .popBtn
+      position: absolute
+      z-index: 120
+      width: 48px
+      height: 48px
+      line-height: 33px
+      transform: translateY(-50%)
+      font-size: 70px
+      color: #FFD200
+      top: 50%
+      cursor: pointer
+      text-align: center
+    & .popNext
+      right: 50%
+      margin-right: -525px
+    & .popPrev
+      left: 50%
+      margin-left: -525px
+    & .popularity
+      position: absolute
+      top: 0
+      left: 50%
+      z-index: 2
+      margin-left: -585px
+      margin-top: 20px
+      &-view, &-like
+        display: flex
+        margin-top: 8px
+        align-items: center
+        svg
+          display: block
+        span
+          margin-left: 6px
+          color: #fff
+    &-info-share
+      position: absolute
+      bottom: 0
+      right: 50%
+      z-index: 2
+      margin-right: -585px
+      margin-bottom: 20px
+    & .close
+      position: absolute
+      top: 0
+      right: 50%
+      z-index: 2
+      margin-right: -585px
+      margin-top: 20px
+      padding: 0
+      box-shadow: none
+      background-color: transparent
+    & .btn.s2
+      position: absolute
+      bottom: 0
+      left: 50%
+      z-index: 2
+      margin-left: -585px
+      margin-bottom: 20px
+  &-items
+    height: 140px
+    background-color: #fff
+    display: flex
+    align-items: center
+    & .container
+      display: flex
+    &-prev, &-next
+      display: flex
+      align-items: center
+      cursor: pointer
+    &-wrap
+      overflow: hidden
+      display: inline-flex
+      margin: auto 60px
+      position: relative
+      height: 100px
+      align-items: center
+    & .galerySlider
+      display: flex
+      align-items: center
+      &-pics
+        margin: 0 8px
+        img
+          width: auto
+          height: 100px
+          object-fit: contain
+  .slid
+    position: relative
+    max-width: 1000px
+    margin: 0 auto
+    &-img
+      max-height: 440px
+      overflow: hidden
+      &:before
+        content: ''
+        background: linear-gradient(rgba(0, 0, 0, 0) 50%, #000000 100%)
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 1
+      img
+        height: 440px
+        width: auto
+        object-fit: contain
+        object-position: center
+    &-attr
+      position: absolute
+      bottom: 0px
+      text-align: center
+      left: 0
+      right: 0
+      padding: 20px
+      z-index: 2
+    &-title
+      color: #ffffff
+      font-size: 20px
+      line-height: 23px
+      display: block
+    &-link
+      color: #FFD200
+      font-size: 14px
+      line-height: 16px
+  &-wrap
+    max-height: 80vh
+    overflow: auto
+    max-width: 820px
+    overflow-x: hidden
+    margin: auto
+    position: relative
+.video.popupData .snglTalant-about-video-block-item
+  background-color: #000
+  margin: 0 8px
+  width: 135px
+  height: 100px
+  position: relative
+  cursor: pointer
+  img
+    width: 135px
+    height: 100px
+.text.popupData
+  .popupData-items
+    margin: 0 auto
+    &-wrap
+      margin: auto 20px
+    .container
+      width: auto
+      margin-top: 0
+      overflow: hidden
+.popupData-text
+  padding: 10px 15px
+  background-color: #fff
+  margin: 0 auto
+  &-pics
+    height: 320px
+    width: 820px
+    background-repeat: no-repeat
+    background-size: cover
+    margin-left: -15px
+  &-preslider
+    font-size: 14px
+    font-weight: bold
+    margin-top: 20px
+    line-height: 13px
+    color: #282f3c
+    padding: 8px
+    border-top: 1px solid #c4c4c4
+  .s2
+    background-color: #fff
+  &-des
+    padding: 10px
+    p
+      margin: 0
+      margin-bottom: 10px
+  &-title
+    font-size: 24px
+    max-width: 500px
+    text-align: center
+    margin: 15px auto
+  &-buttons
+    display: flex
+    padding: 13px 0
+    .btn.s2
+      background-color: #fff!important
+      display: inline-flex
+      align-items: center
+      margin-right: 15px
+      margin-left: 0
+      svg
+        margin-right: 8px
+        display: block
+    .btn.s2.report
+      margin: 0
+      margin-left: 10px
+      height: 30px
+      margin-top: auto
+      margin-bottom: auto
+      svg
+        margin: 0
+
+    .popupData-info-share-ico
+      margin-right: auto
+    .popularity-view
+      display: flex
+      align-items: center
+      margin-right: 15px
+      svg
+        display: block
+    .popularity-like
+      display: flex
+      align-items: center
+      margin-right: 0
+      svg
+        display: block
+  &-name
+    display: flex
+    align-items: center
+    .btn.close
+      box-shadow: none
+      background: none
+      border: none
+      padding: 0
+      margin: 0
+      path
+        fill: #c4c4c4
+    &-title
+      color: #333
+      font-size: 20px
+      margin: 0
+      margin-right: auto
+      font-weight: 600
+    &-img
+      overflow: hidden
+      width: 40px
+      height: 40px
+      margin-right: 70px
+      border-radius: 50%
+      img
+        object-fit: cover
+        width: auto
+        max-width: 100%

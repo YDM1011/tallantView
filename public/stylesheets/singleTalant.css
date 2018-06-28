@@ -1,0 +1,911 @@
+.snglTalant {
+  margin-top: 60px; }
+  .snglTalant.project .snglTalant-info-person-name {
+    margin-top: auto; }
+  .snglTalant .option.active {
+    background-color: #fff; }
+    .snglTalant .option.active span {
+      font-weight: 600;
+      letter-spacing: 0; }
+    .snglTalant .option.active path {
+      fill: #FFD200; }
+    .snglTalant .option.active circle {
+      fill: #2A2E34; }
+  .snglTalant .viewOption {
+    margin: 0 15px;
+    border-bottom: none;
+    -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0; }
+    .snglTalant .viewOption span {
+      font-weight: 600;
+      letter-spacing: 0; }
+      .snglTalant .viewOption span path {
+        fill: #FFD200; }
+      .snglTalant .viewOption span circle {
+        fill: #2A2E34; }
+    .snglTalant .viewOption-des {
+      color: #666;
+      font-size: 14px;
+      line-height: 36px;
+      text-align: center;
+      font-weight: bold;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center; }
+    .snglTalant .viewOption a {
+      padding: 0; }
+  .snglTalant .select-close {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .snglTalant .select-open {
+    margin: 0 15px;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .snglTalant-info {
+    background-image: url("/images/singlTalBg.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: 50% 50%; }
+    .snglTalant-info .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .snglTalant-info-main {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 530px; }
+      .snglTalant-info-main .popularity {
+        padding-top: 32px; }
+        .snglTalant-info-main .popularity-view, .snglTalant-info-main .popularity-like {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: #fff;
+          font-weight: normal;
+          font-size: 16px; }
+          .snglTalant-info-main .popularity-view span + span, .snglTalant-info-main .popularity-like span + span {
+            margin-left: 5px;
+            padding-bottom: 3px; }
+    .snglTalant-info .buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: auto;
+      margin-bottom: 12px; }
+      .snglTalant-info .buttons button {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .snglTalant-info .buttons button.active {
+          border-color: #FFD200;
+          color: #FFD200; }
+          .snglTalant-info .buttons button.active path {
+            fill: #ffd200; }
+        .snglTalant-info .buttons button span:last-child {
+          margin-left: 5px; }
+    .snglTalant-info-person {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .snglTalant-info-person .buttons {
+        margin-top: 0; }
+      .snglTalant-info-person-photo {
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: 6px solid #fff;
+        display: block;
+        margin-top: auto;
+        width: 348px;
+        height: 348px; }
+      .snglTalant-info-person-name {
+        margin: 0;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 44px;
+        color: #fff; }
+      .snglTalant-info-person-city {
+        margin: 0;
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+        line-height: 23px; }
+      .snglTalant-info-person-job {
+        font-size: 14px;
+        line-height: 16px;
+        margin: auto 0 12px 0;
+        color: #fff; }
+    .snglTalant-info-share {
+      padding-top: 32px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .snglTalant-info-share-report {
+        margin-bottom: 20px;
+        margin-top: auto;
+        margin-left: auto; }
+        .snglTalant-info-share-report svg {
+          display: block; }
+      .snglTalant-info-share-tit {
+        font-size: 12px;
+        text-align: center;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #fff; }
+      .snglTalant-info-share-ico {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .snglTalant-info-share-ico a {
+          display: block;
+          text-decoration: none !important;
+          width: 32px;
+          height: 32px;
+          margin: 4px; }
+          .snglTalant-info-share-ico a svg {
+            width: 32px;
+            height: 32px; }
+          .snglTalant-info-share-ico a circle {
+            fill: #2A2E34;
+            -webkit-transition: fill .5s;
+            -o-transition: fill .5s;
+            transition: fill .5s; }
+          .snglTalant-info-share-ico a path {
+            fill: #fff;
+            -webkit-transition: fill .5s;
+            -o-transition: fill .5s;
+            transition: fill .5s; }
+          .snglTalant-info-share-ico a:hover circle {
+            fill: #fff; }
+          .snglTalant-info-share-ico a:hover path {
+            fill: #2A2E34; }
+  .snglTalant-tabs {
+    background-color: #F5F5F5;
+    overflow: inherit; }
+    .snglTalant-tabs .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .snglTalant-tabs-tab {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      background-color: transparent;
+      padding: 8px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0 7px;
+      text-decoration: none; }
+      .snglTalant-tabs-tab circle {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        fill: #fff; }
+      .snglTalant-tabs-tab path {
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        fill: #A1A1A1; }
+      .snglTalant-tabs-tab span:last-child {
+        margin-left: 5px;
+        padding-bottom: 3px;
+        font-weight: 600;
+        color: #2A2E34; }
+      .snglTalant-tabs-tab:hover {
+        background-color: #fff; }
+        .snglTalant-tabs-tab:hover span {
+          font-weight: 600;
+          letter-spacing: 0; }
+        .snglTalant-tabs-tab:hover path {
+          fill: #FFD200; }
+        .snglTalant-tabs-tab:hover circle {
+          fill: #2A2E34; }
+  .snglTalant-about {
+    margin-top: 32px;
+    margin-bottom: 48px; }
+    .snglTalant-about .container-row {
+      background: #FFFFFF;
+      -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      padding: 15px 20px;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .snglTalant-about-title {
+      margin-bottom: 32px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .snglTalant-about-title a {
+        line-height: normal;
+        font-size: 24px;
+        color: #282F3C;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: auto; }
+    .snglTalant-about-text-des p {
+      font-size: 16px;
+      color: #000000;
+      line-height: 19px;
+      margin: 0 0 15px 0; }
+    .snglTalant-about-hashtagWrap {
+      max-width: 100%;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .snglTalant-about-hashtagWrap-close {
+        height: 0;
+        z-index: 10; }
+        .snglTalant-about-hashtagWrap-close .snglTalant-about-hashtag {
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          height: 0;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          background: #fff;
+          z-index: 1;
+          top: 60px; }
+      .snglTalant-about-hashtagWrap-open {
+        height: inherit;
+        z-index: 10; }
+        .snglTalant-about-hashtagWrap-open .snglTalant-about-hashtag {
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          height: inherit;
+          overflow: auto;
+          position: absolute;
+          left: 0;
+          background: #fff;
+          z-index: 1;
+          top: 60px; }
+    .snglTalant-about-hashtag {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .snglTalant-about-hashtag span {
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        background-color: #fff;
+        font-size: 12px;
+        color: #282F3C;
+        border: 1px solid #282F3C;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        margin: 4px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .snglTalant-about-hashtag .all {
+        background-color: #FFF6C9; }
+      .snglTalant-about-hashtag .active, .snglTalant-about-hashtag span:hover {
+        color: #fff;
+        background-color: #282F3C; }
+    .snglTalant-about-dots, .snglTalant-about-dots-close {
+      margin-left: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer; }
+      .snglTalant-about-dots svg, .snglTalant-about-dots-close svg {
+        padding: 0; }
+    .snglTalant-about-photo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative; }
+      .snglTalant-about-photo-galery {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        margin: 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .snglTalant-about-photo-galery-pics {
+          margin: 4px;
+          height: 200px;
+          background-color: #000;
+          overflow: hidden;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          position: relative;
+          cursor: pointer; }
+          .snglTalant-about-photo-galery-pics:hover:before {
+            content: '';
+            position: absolute;
+            background-image: url("/images/zoom.svg");
+            background-color: rgba(40, 47, 60, 0.8);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; }
+          .snglTalant-about-photo-galery-pics:hover img {
+            -o-object-fit: contain;
+               object-fit: contain;
+            -o-object-position: center;
+               object-position: center; }
+          .snglTalant-about-photo-galery-pics img {
+            margin: auto;
+            display: block;
+            width: 100%;
+            height: 200px;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: top;
+               object-position: top; }
+    .snglTalant-about-video {
+      position: relative; }
+      .snglTalant-about-video-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+        .snglTalant-about-video-block-item {
+          background-color: #000;
+          margin: 7px auto;
+          width: 270px;
+          height: 200px;
+          position: relative;
+          cursor: pointer; }
+          .snglTalant-about-video-block-item:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-image: url(/images/play.png); }
+          .snglTalant-about-video-block-item img {
+            width: 270px;
+            height: 200px;
+            -o-object-fit: contain;
+               object-fit: contain;
+            -o-object-position: center;
+               object-position: center; }
+    .snglTalant-about-doc {
+      position: relative; }
+      .snglTalant-about-doc-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+      .snglTalant-about-doc-item {
+        width: 220px;
+        overflow: hidden;
+        background: #FFFFFF;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        margin: 10px auto;
+        text-decoration: none;
+        -webkit-transition: background-color, -webkit-box-shadow .5s;
+        transition: background-color, -webkit-box-shadow .5s;
+        -o-transition: background-color, box-shadow .5s;
+        transition: background-color, box-shadow .5s;
+        transition: background-color, box-shadow .5s, -webkit-box-shadow .5s; }
+        .snglTalant-about-doc-item:hover {
+          background-color: #FFF6C9;
+          -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          cursor: pointer; }
+      .snglTalant-about-doc-data {
+        padding: 8px; }
+        .snglTalant-about-doc-data-photo {
+          width: 204px;
+          height: 204px; }
+          .snglTalant-about-doc-data-photo img {
+            -o-object-fit: contain;
+               object-fit: contain; }
+        .snglTalant-about-doc-data-title {
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 600;
+          color: #282F3C; }
+        .snglTalant-about-doc-data-hashtag {
+          font-size: 14px;
+          color: #333;
+          white-space: nowrap;
+          -o-text-overflow: ellipsis;
+             text-overflow: ellipsis;
+          overflow: hidden; }
+          .snglTalant-about-doc-data-hashtag a {
+            font-size: 14px;
+            color: #333; }
+        .snglTalant-about-doc-data-des {
+          font-size: 12px;
+          color: #666666;
+          margin-top: 8px; }
+      .snglTalant-about-doc-info {
+        background: rgba(0, 0, 0, 0.03);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .snglTalant-about-doc-info-star svg {
+          display: block; }
+        .snglTalant-about-doc-info-view {
+          margin-left: auto;
+          color: #A1A1A1;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .snglTalant-about-doc-info-view span + span {
+            padding-bottom: 4px;
+            padding-left: 4px;
+            display: block; }
+        .snglTalant-about-doc-info-like {
+          margin-left: 10px;
+          margin-right: 8px;
+          color: #D81F20;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .snglTalant-about-doc-info-like span + span {
+            padding-bottom: 4px;
+            padding-left: 4px;
+            display: block; }
+    .snglTalant-about-proj {
+      position: relative; }
+      .snglTalant-about-proj-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+    .snglTalant-about-blog {
+      position: relative; }
+      .snglTalant-about-blog-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+    .snglTalant-about .proj-item {
+      width: 220px;
+      overflow: hidden;
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      margin: 10px auto;
+      text-decoration: none;
+      -webkit-transition: background-color, -webkit-box-shadow .5s;
+      transition: background-color, -webkit-box-shadow .5s;
+      -o-transition: background-color, box-shadow .5s;
+      transition: background-color, box-shadow .5s;
+      transition: background-color, box-shadow .5s, -webkit-box-shadow .5s; }
+      .snglTalant-about .proj-item:hover {
+        background-color: #FFF6C9;
+        -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        cursor: pointer; }
+    .snglTalant-about .proj-data {
+      padding: 8px; }
+      .snglTalant-about .proj-data-photo {
+        width: 204px;
+        height: 204px; }
+        .snglTalant-about .proj-data-photo img {
+          -o-object-fit: contain;
+             object-fit: contain; }
+      .snglTalant-about .proj-data-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: bold;
+        color: #282F3C;
+        margin-top: 8px; }
+      .snglTalant-about .proj-data-hashtag {
+        font-size: 14px;
+        color: #333;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden; }
+        .snglTalant-about .proj-data-hashtag a {
+          font-size: 14px;
+          color: #333; }
+      .snglTalant-about .proj-data-des {
+        font-size: 12px;
+        color: #666666;
+        margin-top: 8px; }
+      .snglTalant-about .proj-data-city {
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 6px; }
+      .snglTalant-about .proj-data-name {
+        font-size: 14px;
+        color: #333;
+        margin-top: 6px;
+        line-height: 16px;
+        font-weight: bold; }
+      .snglTalant-about .proj-data-job {
+        font-size: 12px;
+        color: #A1A1A1;
+        margin-top: 10px; }
+      .snglTalant-about .proj-data-widget {
+        margin-top: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #0c0c0c; }
+        .snglTalant-about .proj-data-widget-info .funded {
+          color: #ffd200; }
+        .snglTalant-about .proj-data-widget-status {
+          display: block;
+          width: 100%;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          height: 6px;
+          position: relative;
+          overflow: hidden;
+          background-color: #a1a1a1;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s; }
+          .snglTalant-about .proj-data-widget-status:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            top: 0;
+            background-color: #ffd200;
+            -webkit-transform: translateX(-25%);
+                -ms-transform: translateX(-25%);
+                    transform: translateX(-25%); }
+    .snglTalant-about .proj-info {
+      background: rgba(0, 0, 0, 0.03);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .snglTalant-about .proj-info-day {
+        background-color: #d81f20;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 88px; }
+        .snglTalant-about .proj-info-day span {
+          color: #fff;
+          display: block;
+          line-height: 32px; }
+        .snglTalant-about .proj-info-day-ico svg {
+          display: block; }
+        .snglTalant-about .proj-info-day-txt {
+          font-size: 14px; }
+      .snglTalant-about .proj-info-view {
+        margin-left: auto;
+        color: #A1A1A1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 8px; }
+        .snglTalant-about .proj-info-view span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+      .snglTalant-about .proj-info-star svg {
+        display: block; }
+      .snglTalant-about .proj-info-like {
+        margin-left: 2px;
+        margin-right: 8px;
+        color: #D81F20;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .snglTalant-about .proj-info-like span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+    .snglTalant-about .blog-item {
+      width: 220px;
+      overflow: hidden;
+      background: #FFFFFF;
+      -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      margin: 10px auto;
+      text-decoration: none;
+      -webkit-transition: background-color, -webkit-box-shadow .5s;
+      transition: background-color, -webkit-box-shadow .5s;
+      -o-transition: background-color, box-shadow .5s;
+      transition: background-color, box-shadow .5s;
+      transition: background-color, box-shadow .5s, -webkit-box-shadow .5s; }
+      .snglTalant-about .blog-item:hover {
+        background-color: #FFF6C9;
+        -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        cursor: pointer; }
+    .snglTalant-about .blog-data {
+      padding: 8px; }
+      .snglTalant-about .blog-data-photo {
+        width: 204px;
+        height: 204px; }
+        .snglTalant-about .blog-data-photo img {
+          -o-object-fit: contain;
+             object-fit: contain; }
+      .snglTalant-about .blog-data-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #282F3C; }
+      .snglTalant-about .blog-data-hashtag {
+        font-size: 14px;
+        color: #333;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden; }
+        .snglTalant-about .blog-data-hashtag a {
+          font-size: 14px;
+          color: #333; }
+      .snglTalant-about .blog-data-des {
+        font-size: 12px;
+        color: #666666;
+        margin-top: 8px; }
+      .snglTalant-about .blog-data-job {
+        font-size: 12px;
+        color: #A1A1A1;
+        margin-top: 10px; }
+    .snglTalant-about .blog-info {
+      background: rgba(0, 0, 0, 0.03);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .snglTalant-about .blog-info-star svg {
+        display: block; }
+      .snglTalant-about .blog-info-view {
+        margin-left: auto;
+        color: #A1A1A1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .snglTalant-about .blog-info-view span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+      .snglTalant-about .blog-info-like {
+        margin-left: 10px;
+        margin-right: 8px;
+        color: #D81F20;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .snglTalant-about .blog-info-like span + span {
+          padding-bottom: 4px;
+          padding-left: 4px;
+          display: block; }
+
+.popupData-item .share {
+  padding-top: 32px; }
+  .popupData-item .share-tit {
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff; }
+  .popupData-item .share-ico {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .popupData-item .share-ico a {
+      display: block;
+      text-decoration: none !important;
+      width: 32px;
+      height: 32px;
+      margin: 4px; }
+      .popupData-item .share-ico a svg {
+        width: 32px;
+        height: 32px; }
+      .popupData-item .share-ico a circle {
+        fill: #2A2E34;
+        -webkit-transition: fill .5s;
+        -o-transition: fill .5s;
+        transition: fill .5s; }
+      .popupData-item .share-ico a path {
+        fill: #fff;
+        -webkit-transition: fill .5s;
+        -o-transition: fill .5s;
+        transition: fill .5s; }
+      .popupData-item .share-ico a:hover circle {
+        fill: #fff; }
+      .popupData-item .share-ico a:hover path {
+        fill: #2A2E34; }

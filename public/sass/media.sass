@@ -1,6 +1,11 @@
 $headColor: #2A2E34
 $headLink: #fff
 $hoveLinkColor: #FFD200
+.ismobile
+  display: none!important
+@media (min-width: 1805px)
+  .cabinet-menu-zone
+    max-width: 0
 @media (min-width: 1200px)
   .nodesctop
     display: none
@@ -8,7 +13,15 @@ $hoveLinkColor: #FFD200
     display: flex
   .head-button-menu
     display: none
+  .select-close
+    display: flex
 @media (max-width: 1199px)
+  .popupData-info-share
+    margin-right: -369px
+  .popupData-items-wrap
+    overflow-x: auto
+  .select-close
+    display: flex
   header .head-line .issearchT
     display: none
   .container
@@ -243,3 +256,582 @@ $hoveLinkColor: #FFD200
           text-transform: none
           &.active
             color: $hoveLinkColor
+  .popupData
+    &-item
+      & .popNext
+        margin-right: -350px
+      & .popPrev
+        margin-left: -350px
+      & .popularity
+        margin-left: -370px
+      & .snglTalant-info-share
+        margin-right: -370px
+      & .close
+        margin-right: -370px
+      & .btn.s2
+        margin-left: -370px
+      & .btn.s2.report
+        margin-left: -370px
+        margin-bottom: 67px
+    &-items
+    .slid
+      max-width: 600px
+
+@media (max-width: 767px)
+  .popupData-text
+    &-pics
+      width: 100%
+      height: 200px
+      margin: auto
+    &-buttons
+      .btn.s2
+        margin-right: 0
+        &.inselectText
+          margin-right: 15px
+  .popupData-text-buttons
+    flex-wrap: wrap
+    justify-content: center
+    .btn
+      margin-right: 0
+    .inselectText
+      margin-right: 15px
+  .snglTalant-info-share-report
+    margin-left: 10px
+    margin-right: auto
+  .categoriCheck
+    flex-direction: column
+  check-button
+    margin-left: 0!important
+  radio-button
+    margin-left: auto
+  radio-button div, check-button div
+    width: auto
+  .cabinet
+    button[type="submit"]
+      line-height: 28px
+      margin-top: auto
+      font-size: 12px
+      width: 70px
+    &-wrap
+      &-main
+        padding-left: 50px
+        padding-right: 0px
+        padding-top: 60px
+        overflow: hidden
+        &-tablist
+          padding: 10px
+          &-item
+            &-photo
+              &-add
+                button
+                  padding: 10px 5px
+                  margin: auto
+          &-pics
+            margin: 0
+            img
+              width: 220px
+              height: 220px
+          &-form
+            flex-direction: column
+          &-buttons
+            display: flex
+            justify-content: space-around
+            .tabbtn
+              span
+                padding: 10px 5px
+                font-size: 12px
+                margin: 0
+        &-title
+          font-size: 16px
+        &-form
+          max-width: 100%
+          &-row
+            flex-wrap: wrap
+            & > span
+              width: 100%
+              display: inline-block
+              margin-bottom: 5px
+            textarea
+              width: auto
+              margin-top: 8px
+            input[type="text"]
+              padding: 0 15px
+              width: calc(100% - 34px)
+            label
+              display: block
+              text-align: center
+              width: 100%
+              span
+                margin: 8px auto
+              input
+                margin: 8px 0 0 0
+                padding-right: 70px
+                max-width: 100%
+                line-height: 28px
+                width: calc(100% - 89px)
+        &-tab
+          &-name
+            span
+              padding: 0 7px
+              font-size: 14px
+              line-height: 32px
+              width: auto
+    &-menu
+      &-zone
+        display: none!important
+  .head-language.issearch
+    display: block!important
+  .head-search.active
+    width: auto!important
+  .head
+    overflow: visible
+    &-search .openSearch
+      margin: 0
+      width: 100%
+      position: absolute
+      top: 60px
+      left: 0
+      right: 0
+      flex-wrap: wrap
+  .head-search #typeSearch-button
+    width: 100%
+    height: 50px
+    order: 1
+  .head-line
+    &.open
+      .head-logo
+        display: none!important
+      .head-donate
+        display: block!important
+        margin-left: auto
+        margin-right: 0
+      .head-search
+        display: block!important
+        margin-left: 0
+        margin-right: auto
+        position: inherit
+        z-index: 2
+  .popupData
+    &-item
+      & .popNext
+        margin-right: 0
+        right: 15px
+      & .popPrev
+        margin-left: 0
+        left: 15px
+      & .popularity
+        margin-left: 0
+        left: 15px
+        top: inherit
+        bottom: 20px
+        display: flex
+        &-view
+          margin-right: 10px
+      & .snglTalant-info-share
+        margin-right: 0
+        right: 15px
+      & .close
+        margin-right: 0
+        right: 15px
+      & .btn.s2
+        margin-left: 0
+        left: 15px
+        display: none
+        margin-top: 10px
+      .text
+        display: none
+      & .btn.s2.report
+        margin-left: 50px
+        margin-bottom: 20px
+    &-items
+    .slid
+      max-width: 100%
+      &-attr
+        text-align: left
+        padding-bottom: 60px
+  .popupData-items
+    &-wrap
+      margin: auto
+    .container
+      width: 100%
+      padding: 0
+    &-prev, &-next
+      margin: auto 10px
+  .snglTalant
+    &-info
+      .show
+        opacity: 1
+        transition: 0.5s
+        transition-delay: 0.6s
+        transition-property: opacity
+        &-hidden
+          opacity: 0
+      &-btn
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 1
+        &-close
+          display: none
+        &-open
+          display: block
+        svg
+          display: block
+      .container
+        flex-wrap: wrap
+        height: 420px
+        position: relative
+        justify-content: center
+      .buttons
+        margin-bottom: 15px
+        button
+          margin-top: 15px
+          span.text
+            display: none
+      &-main
+        order: 2
+        height: auto
+        position: absolute
+        bottom: 0
+        left: 15px
+        display: none
+        .popularity
+          padding: 0
+          flex-direction: row
+          display: flex
+          &-view
+            margin-right: 15px
+      &-person
+        order: 1
+        height: auto
+        &-photo
+          width: 200px
+          height: 200px
+        &-name
+          font-size: 30px
+      .snglTalant &-share
+        order: 3
+        position: absolute
+        bottom: 0
+        right: 11px
+        padding: 0
+        height: 143px
+        width: 43%
+        display: none
+        &-tit
+          display: none
+        &-ico
+          flex-wrap: wrap
+          a
+            margin-top: 0
+            circle
+              fill: #fff
+            path
+              fill: #2a2e34
+  .popupData
+    &-info
+      &-share
+        padding: 0
+        position: absolute
+        bottom: 60px
+        left: 15px
+        z-index: 1
+        margin: 0
+        right: inherit
+        display: none
+        &-ico
+          a
+            circle
+              fill: #fff
+            path
+              fill: #2a2e34
+      .show
+        opacity: 1
+        transition: 0.5s
+        transition-delay: 0.6s
+        transition-property: opacity
+        &-hidden
+          opacity: 0
+      &-share
+        &-tit
+          display: none
+      &-btn
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 1
+        &-close
+          display: none
+        &-open
+          display: block
+        svg
+          display: block
+      .container
+        flex-wrap: wrap
+        height: 420px
+        position: relative
+        justify-content: center
+      .buttons
+        margin-bottom: 15px
+        button
+          margin-top: 15px
+      &-main
+        order: 2
+        height: auto
+        position: absolute
+        bottom: 0
+        left: 15px
+        display: none
+        .popularity
+          padding: 0
+          flex-direction: row
+          display: flex
+          &-view
+            margin-right: 15px
+      &-person
+        order: 1
+        height: auto
+        &-photo
+          width: 200px
+          height: 200px
+        &-name
+          font-size: 30px
+      .snglTalant &-share
+        order: 3
+        position: absolute
+        bottom: 0
+        right: 11px
+        padding: 0
+        height: 143px
+        width: 43%
+        display: none
+        &-tit
+          display: none
+        &-ico
+          flex-wrap: wrap
+          a
+            margin-top: 0
+            circle
+              fill: #fff
+            path
+              fill: #2a2e34
+  .banner
+    height: 53px
+    iframe
+      transform: scale(0.25) translate(-5px, -317px)
+  .footer-line
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 15px 0
+    &-info
+      order: 1
+  .head.footer
+    .head
+      &-line
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-height: inherit
+        height: inherit
+        padding: 20px 0
+      &-logo
+        margin-left: auto
+        margin-bottom: 30px
+      &-section
+        &-menu
+          margin-right: auto
+          ul
+            flex-direction: column
+            li
+              text-align: center
+              margin: 0.6em 0
+              a
+                line-height: 1.4em
+                font-size: 16px
+  .filter
+    &-seting
+      flex-direction: column
+      flex-grow: 1
+      margin-left: 10px
+      position: relative
+      span
+        font-size: 10px
+  .head
+    &-language
+      order: -1
+    &-logo
+      margin-left: auto
+    &-button-menu
+      margin-left: 0
+  .nodesctop
+    display: block
+    .head
+      background-color: $headColor
+      &-open
+        position: fixed
+        z-index: 110
+        left: 0
+        top: 60px
+        right: 0
+        height: calc(100vh - 60px)
+        width: 100%
+        overflow-y: auto
+        transition: 0.5s
+        & .head-section
+          position: absolute!important
+          bottom: 0
+          width: 100%
+          @media (orientation: landscape)
+            position: relative!important
+      &-close
+        height: 0
+        position: fixed
+        z-index: 110
+        left: 0
+        top: 60px
+        width: 100%
+        right: 0
+        transition: .5s
+        & .head-section
+          position: absolute!important
+          bottom: 0
+          width: 100%
+
+      & .head-section
+        min-height: 420px
+        height: calc(100vh - 60px)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+        &-auth
+          display: flex
+          padding-top: 20px
+          justify-content: center
+          line-height: 37px
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+          padding-bottom: 16px
+          margin-left: 12px
+          margin-right: 12px
+          & .functions-item-signup
+            padding: 7px 15px
+          a
+            font-size: 16px
+        &-menu
+          padding-top: 12px
+          padding-bottom: 38px
+          display: block
+          margin: auto
+          ul
+            padding: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0
+            li
+              list-style: none
+              a
+                display: inline-block
+                color: $headLink
+                text-decoration: none
+                text-transform: uppercase
+                font-size: 16px
+                line-height: 19px
+                margin-top: 26px
+                &.active
+                  color: $hoveLinkColor
+                  border: 1px solid $hoveLinkColor
+        &-subscribe
+          padding: 0px 10px 12px 10px
+          position: relative
+          overflow: hidden
+          p
+            color: #fff
+            text-align: center
+            font-size: 16px
+            line-height: 19px
+            margin: 8px 0px 15px
+          &:before
+            content: ""
+            width: 50%
+            left: 25%
+            height: 2px
+            background-color: rgba(255, 255, 255, 0.2)
+            position: absolute
+            top: 0
+          &-link
+            display: flex
+            justify-content: center
+            a
+              text-decoration: none
+              display: inline-block
+              margin-left: 16px
+              width: 48px
+              height: 48px
+              border-radius: 50%
+              overflow: hidden
+              user-select: none
+              &:first-child
+                margin-left: 0
+      .functions
+        display: flex
+        align-items: center
+        margin-left: auto
+        padding-bottom: 1px
+        &-item
+          margin-left: 25px
+          &:first-child
+            margin-left: 0
+          a
+            color: $headLink
+            text-decoration: none
+            text-transform: uppercase
+          &-signup
+            border: 1px solid
+            padding: 3px 5px
+            border-radius: 5px
+            font-weight: 500
+  .nomobile
+    display: none!important
+  .ismobile
+    display: flex!important
+  .container
+    width: auto
+  .talant
+    .person
+      .container
+        justify-content: center
+    .slider
+      .talantCarousel
+        .owl-next
+          width: 32px
+          height: 32px
+          span
+            font-size: 50px
+            height: 32px
+            line-height: 18px
+        .owl-prev
+          width: 32px
+          height: 32px
+          span
+            font-size: 50px
+            height: 32px
+            line-height: 18px
+        .owl-nav
+          right: inherit
+          bottom: inherit
+          text-align: center
+          position: inherit
+          padding: 10px
+          background-color: $hoveLinkColor
+        .slid
+          &-attr
+            position: inherit
+            padding: 15px 25px 10px 25px
+            width: auto
+          &-title
+            margin: 0
+          &-img
+            img
+              height: inherit

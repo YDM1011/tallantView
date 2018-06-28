@@ -120,8 +120,8 @@
         </div>
     </div>
 </div>
-<div class="wrap">
-    <div class="fluid section section1">
+<div class="wrap" id="fullpage">
+    <div data-anchor="first" class="fluid section section1">
         <div class="section1-info">
             <section class="section1-info-text">
                 <h1>СТАНЬ ВІДОМИМ</h1>
@@ -136,7 +136,7 @@
             </div>
         </div>
     </div>
-    <div class="fluid section section2">
+    <div data-anchor="second" class="fluid section section2">
         <div class="section2-infobg">
             <div class="section2-infobg-1 section2-infobg-shape">
                 <span class="section2-infobg-1-num">1800</span>
@@ -159,7 +159,7 @@
             <a href="#" class="section2-button-link">долучитись</a>
         </div>
     </div>
-    <div class="fluid section section3">
+    <div data-anchor="third" class="fluid section section3">
         <section class="section3-des">
             <p class="section3-des-p">Твої можливості з</p>
             <h1><span class="section3-des-1">talents</span><span class="section3-des-2">collection</span></h1>
@@ -203,7 +203,7 @@
             </div>
         </div>
     </div>
-    <div class="fluid section section4">
+    <div data-anchor="forth" class="fluid section section4">
         <section class="section4-des">
             <p>наші</p>
             <h2>зіркові користувачі</h2>
@@ -250,7 +250,7 @@
             <a class="btn" href="#">стати зіркою</a>
         </div>
     </div>
-    <div class="fluid section section5">
+    <div data-anchor="fifth" class="fluid section section5">
         <section class="section5-des">
             <p>для</p>
             <h2>продюсера, кастинг-директора</h2>
@@ -341,7 +341,7 @@
             </div>
         </div>
     </div>
-    <div class="fluid section section6">
+    <div data-anchor="sixth" class="fluid section section6">
         <div class="signup">
             <p class="signup-title">Реєстрація</p>
             <form action="/" class="signup-form">
@@ -367,14 +367,28 @@
 </div>
 
 <footer class="fluid">
-    <div id="navigation"></div>
+    <div id="navigation">
+        <span class="first" data-menuanchor="first">
+            <a href="#first"></a>
+        </span>
+        <span class="second" data-menuanchor="second"><a href="#second"></a></span>
+        <span class="third" data-menuanchor="third"><a href="#third"></a></span>
+        <span class="forth" data-menuanchor="forth"><a href="#forth"></a></span>
+        <span class="fifth" data-menuanchor="fifth"><a href="#fifth"></a></span>
+        <span class="sixth" data-menuanchor="sixth"><a href="#sixth"></a></span>
+    </div>
 </footer>
 
 <script src="/javascripts/jQuery.js"></script>
+
+<script src="libs/fullpage/jquery.easings.min.js"></script>
+<script src="libs/fullpage/scrolloverflow.min.js"></script>
+<script src="libs/fullpage/jquery.fullPage.min.js"></script>
+<link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
+
 <script src="/javascripts/UI.js"></script>
 <script src="/javascripts/owl.carousel.min.js"></script>
 <script src="/javascripts/main.js"></script>
-<script src="/javascripts/touchscroll.js"></script>
 <script src="/javascripts/init.js"></script>
 </body>
 </html>

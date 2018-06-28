@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="Cabinet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tallents Colection</title>
+    <link rel="stylesheet" href="/stylesheets/headLine.css">
+    <link rel="stylesheet" href="/stylesheets/popup.css">
+    <link rel="stylesheet" href="/stylesheets/filter.css">
+    <link rel="stylesheet" href="/stylesheets/cabinet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/stylesheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/stylesheets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/stylesheets/ui.css">
+    <link rel="stylesheet" href="/stylesheets/media.css">
+</head>
+<body >
+<% include header %>
+<div ng-view class="cabinet"></div>
+<% include footer %>
+<!-- IE required polyfills, in this exact order -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+<script src="https://unpkg.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+<!--END-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+<!--<script src="/javascripts/lib/angular.min.js"></script>-->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular-sanitize.js"></script>
+<script src="/javascripts/lib/angular-resource.min.js"></script>
+<script src="/javascripts/lib/angular-route.min.js"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>-->
+
+<script src="/javascripts/app-cabinet/app.module.js"></script>
+<script src="/javascripts/app-cabinet/app.config.js"></script>
+
+<script src="/javascripts/app-cabinet/profile/profile.module.js"></script>
+<script src="/javascripts/app-cabinet/panel/panel.component.js"></script>
+</body>
+</html>

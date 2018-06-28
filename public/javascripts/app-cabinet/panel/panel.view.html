@@ -1,0 +1,22 @@
+
+<div class="cabinet-menu-title {{pnlCtrl.panel?'open':''}}">
+    <img class="cabinet-menu-pics {{pnlCtrl.panel?'open':''}}" src="/images/profile.png" alt="my photo">
+    <span class="cabinet-menu-name {{pnlCtrl.panel?'hidden':''}}" style="display: {{pnlCtrl.panel?'none':'inline'}}">Марина Власова</span>
+    <div class="cabinet-menu-burger {{pnlCtrl.panel?'open':''}}" ng-click="pnlCtrl.panelEvent()">
+        <svg width="40" height="26" viewBox="0 0 40 26" fill="none">
+            <rect width="20" height="2" transform="translate(20 20)" fill="#282F3C"/>
+            <rect width="30" height="2" transform="translate(10 10)" fill="#282F3C"/>
+            <rect width="40" height="2" fill="#282F3C"/>
+        </svg>
+    </div>
+</div>
+<div class="cabinet-menu-block-wrap">
+    <div class="cabinet-menu-block">
+        <div class="cabinet-menu-link {{pnlCtrl.panel?'open':''}} {{ link.src.split('/',2)[1] == pnlCtrl.root ? 'active' : ''}}" ng-repeat="link in pnlCtrl.links">
+            <a href="{{link.src}}">
+                <span class="cabinet-menu-link-ico" ng-bind-html="link.ico"></span>
+                <span class="cabinet-menu-link-text {{pnlCtrl.panel?'hidden':''}}" style="display: {{pnlCtrl.panel?'none':'inline'}}">{{link.text}}</span>
+            </a>
+        </div>
+    </div>
+</div>

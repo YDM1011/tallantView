@@ -115,35 +115,8 @@
       font-weight: bold; }
   .talant .filter-seting span {
     font-weight: 600;
-    font-size: 14px; }
-  .talant .filter-seting label {
-    color: #2A2E34;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 18px;
-    cursor: pointer; }
-    .talant .filter-seting label svg {
-      -webkit-transform: translateY(3px);
-          -ms-transform: translateY(3px);
-              transform: translateY(3px); }
-    .talant .filter-seting label span {
-      font-size: 16px;
-      display: inline-block;
-      margin-left: 5px; }
-  .talant .filter-seting input + label {
-    color: #2A2E34; }
-    .talant .filter-seting input + label circle {
-      fill: #2A2E34; }
-  .talant .filter-seting input:checked + label {
-    color: #A1A1A1; }
-    .talant .filter-seting input:checked + label circle {
-      fill: #A1A1A1; }
+    font-size: 14px;
+    line-height: 21px; }
 
 .talant .person {
   padding: 48px 0; }
@@ -255,14 +228,24 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
     .talant .pagination-block .dprev {
       -webkit-border-radius: 4px 0 0 4px;
               border-radius: 4px 0 0 4px; }
     .talant .pagination-block .dnext {
       -webkit-border-radius: 0 4px 4px 0;
               border-radius: 0 4px 4px 0; }
-    .talant .pagination-block > div {
+    .talant .pagination-block .items {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 100%;
+      margin-bottom: 10px; }
+    .talant .pagination-block .item {
       border: 1px solid #C4C4C4;
       width: 48px;
       height: 48px;
@@ -282,7 +265,7 @@
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s; }
-      .talant .pagination-block > div:hover, .talant .pagination-block > div.active {
+      .talant .pagination-block .item:hover, .talant .pagination-block .item.active {
         border-color: #2A2E34;
         background-color: #2A2E34;
         color: #fff; }
@@ -301,17 +284,3 @@
           -ms-flex-pack: distribute;
               justify-content: space-around;
       margin-left: 15px; }
-
-footer.head {
-  position: inherit; }
-
-.person-block-pro {
-  display: none; }
-
-.active {
-  position: relative; }
-  .active .person-block-pro {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0; }

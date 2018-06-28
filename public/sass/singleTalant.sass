@@ -1,0 +1,648 @@
+$headColor: #2A2E34
+$headLink: #fff
+$hoveLinkColor: #FFD200
+.snglTalant
+  margin-top: 60px
+  &.project
+    .snglTalant
+      &-info
+        &-person
+          &-name
+            margin-top: auto
+  .option
+    &.active
+      background-color: #fff
+      span
+        font-weight: 600
+        letter-spacing: 0
+      path
+        fill: $hoveLinkColor
+      circle
+        fill: $headColor
+  .viewOption
+    margin: 0 15px
+    border-bottom: none
+    border-radius: 10px 10px 0 0
+    span
+      font-weight: 600
+      letter-spacing: 0
+      path
+        fill: $hoveLinkColor
+      circle
+        fill: $headColor
+    &-des
+      color: #666
+      font-size: 14px
+      line-height: 36px
+      text-align: center
+      font-weight: bold
+      align-self: center
+    a
+      padding: 0
+  .select-close
+    justify-content: center
+  .select-open
+    margin: 0 15px
+    bottom: 0
+    left: 0
+    right: 0
+  &-info
+    background-image: url('/images/singlTalBg.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    .container
+      display: flex
+      justify-content: space-between
+    &-main
+      display: flex
+      flex-direction: column
+      height: 530px
+      .popularity
+        padding-top: 32px
+        &-view, &-like
+          display: flex
+          align-items: center
+          color: #fff
+          font-weight: normal
+          font-size: 16px
+          span + span
+            margin-left: 5px
+            padding-bottom: 3px
+    .buttons
+      display: flex
+      flex-direction: column
+      margin-top: auto
+      margin-bottom: 12px
+      button
+        font-size: 14px
+        margin-top: 20px
+        margin-left: 0
+        margin-right: auto
+        display: flex
+        &.active
+          border-color: #FFD200
+          color: #FFD200
+          path
+            fill: #ffd200
+        span:last-child
+          margin-left: 5px
+    &-person
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .buttons
+        margin-top: 0
+      &-photo
+        border-radius: 50%
+        border: 6px solid #fff
+        display: block
+        margin-top: auto
+        width: 348px
+        height: 348px
+      &-name
+        margin: 0
+        font-size: 40px
+        font-weight: bold
+        line-height: 44px
+        color: #fff
+      &-city
+        margin: 0
+        font-size: 20px
+        font-weight: normal
+        color: #fff
+        line-height: 23px
+      &-job
+        font-size: 14px
+        line-height: 16px
+        margin: auto 0 12px 0
+        color: #fff
+    &-share
+      padding-top: 32px
+      display: flex
+      flex-direction: column
+      &-report
+        margin-bottom: 20px
+        margin-top: auto
+        margin-left: auto
+        svg
+          display: block
+      &-tit
+        font-size: 12px
+        text-align: center
+        line-height: 14px
+        text-transform: uppercase
+        color: #fff
+      &-ico
+        display: flex
+        justify-content: center
+        a
+          display: block
+          text-decoration: none!important
+          width: 32px
+          height: 32px
+          margin: 4px
+          svg
+            width: 32px
+            height: 32px
+          circle
+            fill: $headColor
+            transition: fill .5s
+          path
+            fill: #fff
+            transition: fill .5s
+          &:hover
+            & circle
+              fill: #fff
+            & path
+              fill: $headColor
+  &-tabs
+    background-color: #F5F5F5
+    overflow: inherit
+    .container
+      display: flex
+      justify-content: center
+      padding: 0
+      flex-direction: column
+    &-tab
+      display: inline-flex
+      background-color: transparent
+      padding: 8px
+      align-items: center
+      margin: 0 7px
+      text-decoration: none
+      circle
+        transition: 0.5s
+        fill: #fff
+      path
+        transition: 0.5s
+        fill: #A1A1A1
+      span:last-child
+        margin-left: 5px
+        padding-bottom: 3px
+        font-weight: 600
+        color: $headColor
+      &:hover
+        background-color: #fff
+        span
+          font-weight: 600
+          letter-spacing: 0
+        path
+          fill: $hoveLinkColor
+        circle
+          fill: $headColor
+  &-about
+    margin-top: 32px
+    margin-bottom: 48px
+    .container-row
+      background: #FFFFFF
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16)
+      border-radius: 4px
+      padding: 15px 20px
+      margin-bottom: 16px
+      display: flex
+      flex-direction: column
+    &-title
+      margin-bottom: 32px
+      display: flex
+      flex-wrap: wrap
+      a
+        line-height: normal
+        font-size: 24px
+        color: #282F3C
+        font-weight: bold
+        text-decoration: none
+        margin-right: auto
+    &-text
+      &-des
+        p
+          font-size: 16px
+          color: #000000
+          line-height: 19px
+          margin: 0 0 15px 0
+    &-hashtagWrap
+      max-width: 100%
+      overflow: hidden
+      display: flex
+      &-close
+        height: 0
+        z-index: 10
+        & .snglTalant-about-hashtag
+          flex-wrap: wrap
+          height: 0
+          overflow: hidden
+          position: absolute
+          left: 0
+          background: #fff
+          z-index: 1
+          top: 60px
+      &-open
+        height: inherit
+        z-index: 10
+        & .snglTalant-about-hashtag
+          flex-wrap: wrap
+          height: inherit
+          overflow: auto
+          position: absolute
+          left: 0
+          background: #fff
+          z-index: 1
+          top: 60px
+    &-hashtag
+      display: flex
+      span
+        border-radius: 4px
+        background-color: #fff
+        font-size: 12px
+        color: #282F3C
+        border: 1px solid #282F3C
+        display: inline-block
+        padding: 6px 12px
+        cursor: pointer
+        margin: 4px
+        transition: 0.3s
+      & .all
+        background-color: #FFF6C9
+      & .active, & span:hover
+        color: #fff
+        background-color: #282F3C
+    &-dots, &-dots-close
+      margin-left: 15px
+      display: flex
+      align-items: center
+      cursor: pointer
+      svg
+        padding: 0
+    &-photo
+      display: flex
+      flex-direction: column
+      justify-content: center
+      position: relative
+      &-galery
+        display: inline-flex
+        flex-wrap: wrap
+        margin: 0 auto
+        flex-direction: row
+        justify-content: center
+        &-pics
+          margin: 4px
+          height: 200px
+          background-color: #000
+          overflow: hidden
+          display: flex
+          position: relative
+          cursor: pointer
+          &:hover
+            &:before
+              content: ''
+              position: absolute
+              background-image: url('/images/zoom.svg')
+              background-color: rgba(40, 47, 60, 0.8)
+              background-repeat: no-repeat
+              background-position: 50%
+              top: 0
+              left: 0
+              right: 0
+              bottom: 0
+            img
+              object-fit: contain
+              object-position: center
+          img
+            margin: auto
+            display: block
+            width: 100%
+            height: 200px
+            //max-height: 250px
+            object-fit: cover
+            object-position: top
+    &-video
+      position: relative
+      &-block
+        display: flex
+        flex-wrap: wrap
+        &-item
+          background-color: #000
+          margin: 7px auto
+          width: 270px
+          height: 200px
+          position: relative
+          cursor: pointer
+          &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            background-repeat: no-repeat
+            background-position: 50%
+            background-image: url(/images/play.png)
+            
+          img
+            width: 270px
+            height: 200px
+            object-fit: contain
+            object-position: center
+    &-doc
+      position: relative
+      &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+      &-item
+        width: 220px
+        overflow: hidden
+        background: #FFFFFF
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16)
+        border-radius: 4px
+        margin: 10px auto
+        text-decoration: none
+        transition: background-color, box-shadow .5s
+        &:hover
+          background-color: #FFF6C9
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
+          cursor: pointer
+      &-data
+        padding: 8px
+        &-photo
+          width: 204px
+          height: 204px
+          img
+            object-fit: contain
+        &-title
+          font-size: 16px
+          line-height: 19px
+          font-weight: 600
+          color: #282F3C
+        &-hashtag
+          font-size: 14px
+          color: #333
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          a
+            font-size: 14px
+            color: #333
+        &-des
+          font-size: 12px
+          color: #666666
+          margin-top: 8px
+      &-info
+        background: rgba(0, 0, 0, 0.03)
+        display: flex
+        align-items: center
+        &-star svg
+          display: block
+        &-view
+          margin-left: auto
+          color: #A1A1A1
+          display: flex
+          align-items: center
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+        &-like
+          margin-left: 10px
+          margin-right: 8px
+          color: #D81F20
+          display: flex
+          align-items: center
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+    &-proj
+      position: relative
+      &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &-blog
+      position: relative
+      &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    & .proj
+      &-item
+        width: 220px
+        overflow: hidden
+        background: #FFFFFF
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16)
+        border-radius: 4px
+        margin: 10px auto
+        text-decoration: none
+        transition: background-color, box-shadow .5s
+        &:hover
+          background-color: #FFF6C9
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
+          cursor: pointer
+      &-data
+        padding: 8px
+        &-photo
+          width: 204px
+          height: 204px
+          img
+            object-fit: contain
+        &-title
+          font-size: 16px
+          line-height: 19px
+          font-weight: bold
+          color: #282F3C
+          margin-top: 8px
+        &-hashtag
+          font-size: 14px
+          color: #333
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          a
+            font-size: 14px
+            color: #333
+        &-des
+          font-size: 12px
+          color: #666666
+          margin-top: 8px
+        &-city
+          font-size: 12px
+          color: #333
+          margin-bottom: 6px
+        &-name
+          font-size: 14px
+          color: #333
+          margin-top: 6px
+          line-height: 16px
+          font-weight: bold
+        &-job
+          font-size: 12px
+          color: #A1A1A1
+          margin-top: 10px
+        &-widget
+          margin-top: 8px
+          font-size: 12px
+          font-weight: 600
+          color: #0c0c0c
+          &-info
+            & .funded
+              color: #ffd200
+          &-status
+            display: block
+            width: 100%
+            border-radius: 5px
+            height: 6px
+            position: relative
+            overflow: hidden
+            background-color: #a1a1a1
+            transition: .5s
+            &:before
+              content: ''
+              display: block
+              width: 100%
+              height: 6px
+              position: absolute
+              top: 0
+              background-color: #ffd200
+              transform: translateX(-25%)
+      &-info
+        background: rgba(0, 0, 0, 0.03)
+        display: flex
+        align-items: center
+        &-day
+          background-color: #d81f20
+          display: flex
+          justify-content: space-around
+          align-items: center
+          width: 88px
+          span
+            color: #fff
+            display: block
+            line-height: 32px
+          &-ico svg
+            display: block
+          &-txt
+            font-size: 14px
+        &-view
+          margin-left: auto
+          color: #A1A1A1
+          display: flex
+          align-items: center
+          margin-right: 8px
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+        &-star
+          svg
+            display: block
+        &-like
+          margin-left: 2px
+          margin-right: 8px
+          color: #D81F20
+          display: flex
+          align-items: center
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+    & .blog
+      &-item
+        width: 220px
+        overflow: hidden
+        background: #FFFFFF
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16)
+        border-radius: 4px
+        margin: 10px auto
+        text-decoration: none
+        transition: background-color, box-shadow .5s
+        &:hover
+          background-color: #FFF6C9
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
+          cursor: pointer
+      &-data
+        padding: 8px
+        &-photo
+          width: 204px
+          height: 204px
+          img
+            object-fit: contain
+        &-title
+          font-size: 16px
+          line-height: 19px
+          font-weight: 600
+          color: #282F3C
+        &-hashtag
+          font-size: 14px
+          color: #333
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+          a
+            font-size: 14px
+            color: #333
+        &-des
+          font-size: 12px
+          color: #666666
+          margin-top: 8px
+        &-job
+          font-size: 12px
+          color: #A1A1A1
+          margin-top: 10px
+      &-info
+        background: rgba(0, 0, 0, 0.03)
+        display: flex
+        align-items: center
+        &-star svg
+          display: block
+        &-view
+          margin-left: auto
+          color: #A1A1A1
+          display: flex
+          align-items: center
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+        &-like
+          margin-left: 10px
+          margin-right: 8px
+          color: #D81F20
+          display: flex
+          align-items: center
+          & span + span
+            padding-bottom: 4px
+            padding-left: 4px
+            display: block
+.popupData-item .share
+  padding-top: 32px
+  &-tit
+    font-size: 12px
+    text-align: center
+    line-height: 14px
+    text-transform: uppercase
+    color: #fff
+  &-ico
+    display: flex
+    justify-content: center
+    a
+      display: block
+      text-decoration: none!important
+      width: 32px
+      height: 32px
+      margin: 4px
+      svg
+        width: 32px
+        height: 32px
+      circle
+        fill: $headColor
+        transition: fill .5s
+      path
+        fill: #fff
+        transition: fill .5s
+      &:hover
+        & circle
+          fill: #fff
+        & path
+          fill: $headColor

@@ -100,7 +100,7 @@ button, button:focus
   top: 0
   left: 0
   right: 0
-  z-index: 100
+  z-index: 111
   &-line
     display: flex
     height: 60px
@@ -178,12 +178,15 @@ button, button:focus
   &-search
     margin-left: 12px
     display: flex
+    &.active
+      margin-left: 0
+      width: 100%
     & #typeSearch-button
       color: $headColor
       background: #F7F7F7
       border: 1px solid #C4C4C4
       margin: 0
-      width: 304px
+      width: 272px
     & .ui-selectmenu-text
       color: #333
       font-size: 16px
@@ -207,10 +210,11 @@ button, button:focus
       display: flex
       height: 60px
       margin-left: auto
+      flex-grow: 1
     #hashtag
       background: #ffffff
       border: none
-      padding: 12px 15px
+      padding: 9px 15px
       border-left: 1px solid #c4c4c4
     #btnSearch
       width: auto
@@ -222,17 +226,27 @@ button, button:focus
       margin-right: -15px
       border: none
       background: transparent
+      .close
+        display: none
+        padding: 0 6px
       circle
         fill: #fff
-      &:hover, &.activeSearch
+      &:hover
         background-color: #fff
+      &.activeSearch
+        background-color: #fff
+        svg
+          display: none
+        svg.close
+          display: block
       &:hover circle
         fill: $hoveLinkColor
       &.activeSearch
         circle
           fill: $hoveLinkColor
 .footer.head
-  position: inherit
+  position: relative
+  z-index: 10
   & .head
     &-section-menu
       a
@@ -292,3 +306,53 @@ button, button:focus
           fill: #fff
         &:hover circle
           fill: $hoveLinkColor
+.s2
+  border: 1px solid #FFFFFF
+  border-radius: 4px
+  padding: 4px 8px 5px 8px!important
+  background: rgba(0, 0, 0, 0.1)!important
+  box-shadow: none!important
+  &.active
+    color: #FFD200
+    border-color: #FFD200
+    path
+      fill: #ffd200
+  &:hover
+    background: transparent!important
+.s2.yel
+  border: 1px solid #FFD200
+  color: #FFD200
+  path
+    fill: #ffd200
+.s2.drk
+  border: 1px solid #282F3C
+  color: #282F3C
+  path
+    fill: #282F3C
+.viewinput
+  display: block
+  width: 16px
+  min-width: 16px
+  max-width: 16px
+  height: 16px
+  background: #FFFFFF
+  border: 2px solid $hoveLinkColor
+  box-sizing: border-box
+  border-radius: 4px
+  &.show
+    span
+      background: $headColor
+  span
+    display: block
+    margin: 3px
+    width: 6px
+    height: 6px
+    background: #fff
+    border-radius: 1px
+  input:checked ~ .viewinput
+    span
+      background: $headColor
+footer.footer
+  background: #fff
+  z-index: 10
+  position: relative

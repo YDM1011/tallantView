@@ -121,7 +121,7 @@ button, button:focus {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100; }
+  z-index: 111; }
   .head-line {
     display: -webkit-box;
     display: -webkit-flex;
@@ -229,12 +229,15 @@ button, button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .head-search.active {
+      margin-left: 0;
+      width: 100%; }
     .head-search #typeSearch-button {
       color: #2A2E34;
       background: #F7F7F7;
       border: 1px solid #C4C4C4;
       margin: 0;
-      width: 304px; }
+      width: 272px; }
     .head-search .ui-selectmenu-text {
       color: #333;
       font-size: 16px;
@@ -263,11 +266,15 @@ button, button:focus {
       display: -ms-flexbox;
       display: flex;
       height: 60px;
-      margin-left: auto; }
+      margin-left: auto;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
     .head-search #hashtag {
       background: #ffffff;
       border: none;
-      padding: 12px 15px;
+      padding: 9px 15px;
       border-left: 1px solid #c4c4c4; }
     .head-search #btnSearch {
       width: auto;
@@ -281,17 +288,27 @@ button, button:focus {
       margin-right: -15px;
       border: none;
       background: transparent; }
+      .head-search #btnSearch .close {
+        display: none;
+        padding: 0 6px; }
       .head-search #btnSearch circle {
         fill: #fff; }
-      .head-search #btnSearch:hover, .head-search #btnSearch.activeSearch {
+      .head-search #btnSearch:hover {
         background-color: #fff; }
+      .head-search #btnSearch.activeSearch {
+        background-color: #fff; }
+        .head-search #btnSearch.activeSearch svg {
+          display: none; }
+        .head-search #btnSearch.activeSearch svg.close {
+          display: block; }
       .head-search #btnSearch:hover circle {
         fill: #FFD200; }
       .head-search #btnSearch.activeSearch circle {
         fill: #FFD200; }
 
 .footer.head {
-  position: inherit; }
+  position: relative;
+  z-index: 10; }
   .footer.head .head-section-menu a {
     -webkit-transition: color .5s;
     -o-transition: color .5s;
@@ -371,3 +388,61 @@ button, button:focus {
         fill: #fff; }
       .footer-line-subscribe a:hover circle {
         fill: #FFD200; }
+
+.s2 {
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 4px 8px 5px 8px !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+  .s2.active {
+    color: #FFD200;
+    border-color: #FFD200; }
+    .s2.active path {
+      fill: #ffd200; }
+  .s2:hover {
+    background: transparent !important; }
+
+.s2.yel {
+  border: 1px solid #FFD200;
+  color: #FFD200; }
+  .s2.yel path {
+    fill: #ffd200; }
+
+.s2.drk {
+  border: 1px solid #282F3C;
+  color: #282F3C; }
+  .s2.drk path {
+    fill: #282F3C; }
+
+.viewinput {
+  display: block;
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  border: 2px solid #FFD200;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+  .viewinput.show span {
+    background: #2A2E34; }
+  .viewinput span {
+    display: block;
+    margin: 3px;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    -webkit-border-radius: 1px;
+            border-radius: 1px; }
+  .viewinput input:checked ~ .viewinput span {
+    background: #2A2E34; }
+
+footer.footer {
+  background: #fff;
+  z-index: 10;
+  position: relative; }

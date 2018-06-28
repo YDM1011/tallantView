@@ -96,3 +96,7 @@
     line-height: 26px;
     text-transform: lowercase;
 }
+.ui-selectmenu-open {
+    display: block;
+    z-index: 120;
+}

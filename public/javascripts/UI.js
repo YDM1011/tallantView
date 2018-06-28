@@ -7219,7 +7219,7 @@
         this._curInst = null; // The current instance in use
         this._keyEvent = false; // If the last event was a key event
         this._disabledInputs = []; // List of date picker inputs that have been disabled
-        this._datepickerShowing = false; // True if the popup picker is showing , false if not
+        this._datepickerShowing = false; // True if the popup.ejs picker is showing , false if not
         this._inDialog = false; // True if showing within a "dialog", false if not
         this._mainDivId = "ui-datepicker-div"; // The ID of the main datepicker division
         this._inlineClass = "ui-datepicker-inline"; // The name of the inline marker class
@@ -7250,9 +7250,9 @@
             yearSuffix: "" // Additional text to append to the year in the month headers
         };
         this._defaults = { // Global defaults for all the date picker instances
-            showOn: "focus", // "focus" for popup on focus,
+            showOn: "focus", // "focus" for popup.ejs on focus,
             // "button" for trigger button, or "both" for either
-            showAnim: "fadeIn", // Name of jQuery animation for popup
+            showAnim: "fadeIn", // Name of jQuery animation for popup.ejs
             showOptions: {}, // Options for enhanced animations
             defaultDate: null, // Used when field is blank: actual date,
             // +/-number for offset from today, null for today
